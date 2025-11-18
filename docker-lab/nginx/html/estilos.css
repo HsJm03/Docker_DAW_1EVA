@@ -1,0 +1,43 @@
+ body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #5A6FD6; 
+            color: white;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: normal;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        .info {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .info p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .status {
+            text-align: center;
+            font-size: 1.5em;
+            color: #4ade80;
+            font-weight: bold;
+            margin: 30px 0;
+        }

@@ -1,0 +1,15 @@
+$TTL    604800
+@       IN      SOA     dns.milab.local. admin.milab.local. (
+                              3         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+; Servidores de nombres
+@       IN      NS      dns.milab.local.
+
+; Registros PTR - Resolución inversa IP -> Nombre
+10.0    IN      PTR     dns.milab.local.
+20.0    IN      PTR     nginx.milab.local.
+30.0    IN      PTR     cliente.milab.local.

@@ -1,0 +1,28 @@
+options {
+    directory "/var/cache/bind";
+
+    // Permitir consultas desde cualquier IP
+    allow-query { any; };
+    
+    // Permitir recursión
+    recursion yes;
+    allow-recursion { any; };
+
+    // Forwarders (DNS externos para internet)
+    forwarders {
+        8.8.8.8;
+        8.8.4.4;
+        1.1.1.1;
+    };
+
+    // Desactivar transferencias de zona por defecto
+    allow-transfer { none; };
+
+    dnssec-validation auto;
+
+    listen-on { any; };
+    listen-on-v6 { none; };
+
+    // Log de consultas
+    querylog yes;
+};
